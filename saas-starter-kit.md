@@ -128,3 +128,9 @@ _Last updated: 2026-02-07_
 4. Add a second template mode for marketing-only builds.
 5. Decide final template license before publishing.
 
+## 5) AI Design Steering
+
+- Keep AI-facing design rules split by surface.
+- Use `ai-app-design-guidance.md` for authenticated product UI.
+- Use `ai-marketing-design-guidance.md` for public marketing pages.
+- Use `saas-starter-kit.md` for stack, architecture, and template decisions.
