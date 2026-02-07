@@ -1,4 +1,4 @@
-# SaaS Starter Kit (From F4 Goal Tracker Learnings)
+# SaaS Starter Kit
 
 _Last updated: 2026-02-07_
 

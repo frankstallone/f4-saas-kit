@@ -1,4 +1,4 @@
-# AI App Design Guidance (F4 SaaS Kit)
+# AI App Design Guidance
 
 _Last updated: 2026-02-07_
 
@@ -6,7 +6,10 @@ _Last updated: 2026-02-07_
 
 Use this file to steer AI-generated product UI inside authenticated app surfaces.
 
-Target vibe: dense, high-signal, neutral, precise, and premium without visual excess.
+Default target vibe: dense, high-signal, neutral, precise, and premium without visual excess.
+
+This guidance supports one default baseline plus optional visual variants.  
+Core interaction quality standards are always required regardless of visual profile.
 
 ## Core Rules
 
@@ -39,8 +42,31 @@ Target vibe: dense, high-signal, neutral, precise, and premium without visual ex
 - Favor predictable layouts, consistent controls, and strong interaction patterns.
 - Keep chrome light and purposeful so workflow remains central.
 
+## Visual Profiles
+
+### Profile A: System Utility (Default)
+- Keep visuals restrained and typography-led.
+- Use minimal surface treatment and low visual drama.
+- Prioritize throughput, scanability, and predictable controls.
+
+### Profile B: Atmospheric Command Center (Optional Variant)
+- Use a dark-first canvas with restrained luminous accents.
+- Create depth with clear surface tiers: `canvas`, `panel`, `raised`, `overlay`.
+- Prefer multi-pane command-center layouts for complex workflows.
+- Use subtle glow/focus treatment for key active states and live context.
+- Keep motion spatial and short (panel reveal, context shift, dock/undock).
+- Preserve dense information architecture; do not trade density for spectacle.
+
+## Variant Selection Rules
+
+- Start with `Profile A` by default.
+- Use `Profile B` only when the product area benefits from immersive, high-context workspace framing.
+- Keep navigation, state models, component behavior, and keyboard ergonomics identical across profiles.
+- If profile choice is unclear, ship `Profile A`.
+
 ## Implementation Defaults for Codex
 
+- Decide profile first: `Profile A` (default) or `Profile B` (optional).
 - Use accessible primitives and App Router-friendly patterns.
 - Prefer split views, tabs, and collapsible sections for dense workflows.
 - Keep component states explicit: `default`, `hover`, `focus`, `active`, `loading`, `error`, `success`, `disabled`.
@@ -54,6 +80,9 @@ Target vibe: dense, high-signal, neutral, precise, and premium without visual ex
 - Animation used for style instead of interaction clarity.
 - Hidden shortcut systems with no discoverability.
 - Inconsistent visual language across panels and controls.
+- Excessive blur, bloom, or layered glow that reduces readability.
+- Color-driven hierarchy that replaces typographic and structural hierarchy.
+- Cinematic styling on simple CRUD/form screens where it adds no workflow value.
 
 ## Acceptance Checklist (Per Screen)
 

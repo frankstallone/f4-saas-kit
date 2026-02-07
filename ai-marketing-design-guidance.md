@@ -1,4 +1,4 @@
-# AI Marketing Design Guidance (F4 SaaS Kit)
+# AI Marketing Design Guidance 
 
 _Last updated: 2026-02-07_
 
@@ -6,7 +6,10 @@ _Last updated: 2026-02-07_
 
 Use this file to steer AI-generated public marketing pages.
 
-Target vibe: product-first, restrained, credible, and conversion-oriented.
+Default target vibe: product-first, restrained, credible, and conversion-oriented.
+
+This guidance supports one default baseline plus optional visual variants.  
+Narrative clarity, product proof, accessibility, and conversion clarity are required in all variants.
 
 ## Linear-Inspired Synthesis (What We Borrow, Not Copy)
 
@@ -48,8 +51,31 @@ Use these as interaction and information-design principles, not as visual clonin
 - Keep CTA language explicit and consistent.
 - Include trust signals without clutter: customer logos, metrics, compliance/security references.
 
+## Visual Profiles
+
+### Profile A: Product-Credible Minimal (Default)
+- Use restrained surfaces, disciplined accent color, and concise typography-led hierarchy.
+- Keep visual identity understated and product-proof first.
+- Optimize for clarity, trust, and conversion speed.
+
+### Profile B: Cinematic Futurist (Optional Variant)
+- Use dark-first atmospheric surfaces with controlled luminous accents.
+- Build strong hero presence with depth, glow, and high-contrast composition.
+- Keep product screenshots/demos central, framed with higher visual drama.
+- Use larger typographic moments and tighter copy blocks for punchy storytelling.
+- Maintain a clear section arc: hero -> proof -> capabilities -> trust -> CTA.
+- Keep effects purposeful; atmosphere must not obscure meaning.
+
+## Variant Selection Rules
+
+- Start with `Profile A` by default.
+- Use `Profile B` when brand intent calls for ambitious, high-energy storytelling.
+- Keep information architecture, CTA logic, and trust framing consistent across profiles.
+- If uncertain, ship `Profile A`.
+
 ## Implementation Defaults for Codex
 
+- Decide profile first: `Profile A` (default) or `Profile B` (optional).
 - Build sections with a clear narrative progression, not isolated feature tiles.
 - Keep heading/body/caption scale consistent across the page.
 - Prefer crisp separators, spacing rhythm, and restrained elevation.
@@ -63,6 +89,9 @@ Use these as interaction and information-design principles, not as visual clonin
 - Accent colors competing across many sections.
 - Decorative animation that competes with content.
 - Marketing pages that read like dashboard UI clones.
+- Excessive glow/blur stacks that reduce legibility of copy and CTAs.
+- Visual spectacle replacing concrete product evidence.
+- Cinematic treatment without a clear narrative progression.
 
 ## Acceptance Checklist (Per Page)
 
@@ -72,3 +101,4 @@ Use these as interaction and information-design principles, not as visual clonin
 - Are trust signals present and easy to scan?
 - Does motion improve comprehension rather than distract?
 - Does the page feel premium and credible without feeling loud?
+- If using `Profile B`, does the atmospheric styling still preserve readability and conversion clarity?
