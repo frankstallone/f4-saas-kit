@@ -1,0 +1,102 @@
+/*
+  Semantic token mapping for Tailwind v4.
+  Source scale: design/tokens/f4-tonal-palette.css
+
+  Tonal category intent:
+  - Surfaces: Highlights in light mode, Shadows in dark mode
+  - Borders/dividers: lighter quarter tones in light mode, mirrored darker tones in dark mode
+  - Text/icons: mid tones or darker for readability
+*/
+
+:root {
+  --surface-bg: var(--color-neutral-025);
+  --surface-card: var(--color-neutral-000);
+  --surface-muted: var(--color-neutral-050);
+  --surface-accent: var(--color-primary-050);
+
+  --text-primary: var(--color-neutral-900);
+  --text-secondary: var(--color-neutral-700);
+  --text-muted: var(--color-neutral-600);
+  --text-inverse: var(--color-neutral-000);
+
+  --border-default: var(--color-neutral-200);
+  --border-strong: var(--color-neutral-300);
+  --focus-ring: var(--color-primary-500);
+
+  --brand-solid: var(--color-primary-500);
+  --brand-solid-hover: var(--color-primary-550);
+  --brand-soft: var(--color-primary-100);
+
+  --success-solid: var(--color-positive-500);
+  --success-soft: var(--color-positive-100);
+  --warning-solid: var(--color-highlight-500);
+  --warning-soft: var(--color-highlight-100);
+  --danger-solid: var(--color-negative-500);
+  --danger-soft: var(--color-negative-100);
+  --info-solid: var(--color-info-500);
+  --info-soft: var(--color-info-100);
+}
+
+.dark {
+  --surface-bg: var(--color-neutral-950);
+  --surface-card: var(--color-neutral-900);
+  --surface-muted: var(--color-neutral-850);
+  --surface-accent: var(--color-primary-850);
+
+  --text-primary: var(--color-neutral-050);
+  --text-secondary: var(--color-neutral-200);
+  --text-muted: var(--color-neutral-300);
+  --text-inverse: var(--color-neutral-999);
+
+  --border-default: var(--color-neutral-800);
+  --border-strong: var(--color-neutral-700);
+  --focus-ring: var(--color-primary-450);
+
+  --brand-solid: var(--color-primary-450);
+  --brand-solid-hover: var(--color-primary-400);
+  --brand-soft: var(--color-primary-850);
+
+  --success-solid: var(--color-positive-450);
+  --success-soft: var(--color-positive-850);
+  --warning-solid: var(--color-highlight-450);
+  --warning-soft: var(--color-highlight-850);
+  --danger-solid: var(--color-negative-450);
+  --danger-soft: var(--color-negative-850);
+  --info-solid: var(--color-info-450);
+  --info-soft: var(--color-info-850);
+}
+
+@theme inline {
+  --color-background: var(--surface-bg);
+  --color-foreground: var(--text-primary);
+
+  --color-card: var(--surface-card);
+  --color-card-foreground: var(--text-primary);
+
+  --color-popover: var(--surface-card);
+  --color-popover-foreground: var(--text-primary);
+
+  --color-muted: var(--surface-muted);
+  --color-muted-foreground: var(--text-muted);
+
+  --color-accent: var(--surface-accent);
+  --color-accent-foreground: var(--text-primary);
+
+  --color-border: var(--border-default);
+  --color-input: var(--border-default);
+  --color-ring: var(--focus-ring);
+
+  --color-primary: var(--brand-solid);
+  --color-primary-foreground: var(--text-inverse);
+  --color-secondary: var(--color-secondary-500);
+  --color-secondary-foreground: var(--text-inverse);
+
+  --color-destructive: var(--danger-solid);
+
+  --color-success: var(--success-solid);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning-solid);
+  --color-warning-soft: var(--warning-soft);
+  --color-info: var(--info-solid);
+  --color-info-soft: var(--info-soft);
+}
