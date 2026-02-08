@@ -1,6 +1,6 @@
 # SaaS Starter Kit
 
-_Last updated: 2026-02-07_
+_Last updated: 2026-02-08_
 
 ## 1) Technical Profile of the Current App
 
@@ -9,6 +9,7 @@ _Last updated: 2026-02-07_
 - **Runtime:** Node.js `>=24 <25`
 - **Language:** TypeScript `5.9.3` (strict mode)
 - **React:** `19.2.3`
+- **React Compiler:** Enabled in Next.js config (`reactCompiler: true`)
 
 ### UI and styling
 - **CSS framework:** Tailwind CSS v4 (`tailwindcss`, `@tailwindcss/postcss`)
@@ -17,6 +18,7 @@ _Last updated: 2026-02-07_
 - **Toasts:** `sonner`
 - **Animation helpers:** `tw-animate-css`
 - **Typography:** `next/font` with DM Sans
+- **Theme engine:** `next-themes`
 - **Theming:** CSS variables + OKLCH tokens in `app/globals.css`; dark mode via `.dark` class
 
 ### Auth and access control
@@ -50,7 +52,7 @@ _Last updated: 2026-02-07_
 ### Quality and delivery
 - **Linting:** ESLint 9 + Next core-web-vitals config
 - **Formatting:** Prettier 3
-- **Tests:** Vitest 4
+- **Tests:** Vitest `4.x`
 - **Git hooks:** Husky + lint-staged
 - **CI:** GitHub Actions (lint/test/build)
 - **Release automation:** release-please workflows on `main`
@@ -68,6 +70,7 @@ _Last updated: 2026-02-07_
 - Auth wrapper helpers (`getServerSession`, `requireServerSession`, allowlist logic).
 - Storage provider abstraction so app code is cloud-vendor-neutral.
 - Environment validation via Zod before app startup.
+- TanStack recommendation: use TanStack primitives as defaults for complex UI/data workflows (`@tanstack/react-table` now; evaluate other TanStack packages per feature needs).
 - CI + release automation wired from day one.
 
 ## 3) What to Add Next to This Document
