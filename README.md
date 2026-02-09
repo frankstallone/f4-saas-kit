@@ -1,6 +1,6 @@
 # F4 SaaS Kit
 
-Documentation-first foundation for a reusable SaaS starter kit derived from learnings in the F4 Goal Tracker stack.
+Documentation-first foundation for a reusable SaaS starter kit derived from learnings.
 
 ## What This Repo Contains
 
