@@ -2,22 +2,27 @@
 
 ## Project Structure & Module Organization
 
-This repository is documentation-first. Current top-level files:
+This repository is documentation-first and follows Diataxis.
 
-- `saas-starter-kit.md`: technical baseline and architecture decisions for the starter.
-- `ai-app-design-guidance.md`: design rules for authenticated product UI.
-- `ai-marketing-design-guidance.md`: design rules for public marketing pages.
+Primary structure:
 
-Keep related guidance in these files instead of duplicating content. If a section spans app and marketing concerns, split it across the two guidance docs and cross-reference.
+- `docs/tutorials/`: learning-oriented guides.
+- `docs/how-to/`: task-oriented procedures.
+- `docs/reference/`: authoritative technical facts, token specs, and mappings.
+- `docs/explanation/`: rationale, strategy, and design philosophy.
+- `design/tokens/`: CSS token source files (`f4-tonal-palette.css`, `semantic-theme.css`).
+- `README.md`: Diataxis index and entry points.
+
+Keep documents in the correct Diataxis bucket. Do not mix reference facts and explanation rationale in the same file unless there is a clear reason.
 
 ## Build, Test, and Development Commands
 
 There is no local app runtime in this repository. Primary workflow is editing and validating Markdown.
 
 - `rg --files`: quick inventory of tracked docs.
-- `rg -n "pattern" *.md`: verify terminology consistency and references.
-- `git diff -- *.md`: review content changes before commit.
-- `npx markdownlint-cli2 "*.md"`: optional Markdown lint pass (if tooling is installed).
+- `rg -n "pattern" docs/**/*.md README.md AGENTS.md`: verify terminology consistency and references.
+- `git diff -- docs/**/*.md README.md AGENTS.md`: review content changes before commit.
+- `npx markdownlint-cli2 "docs/**/*.md" README.md AGENTS.md`: optional Markdown lint pass (if tooling is installed).
 
 ## Coding Style & Naming Conventions
 
@@ -25,15 +30,16 @@ There is no local app runtime in this repository. Primary workflow is editing an
 - Keep tone direct, instructional, and implementation-focused.
 - Prefer concise bullets over long paragraphs.
 - Preserve the `_Last updated: YYYY-MM-DD_` line in each guide when making substantive edits.
-- File names follow purpose-based kebab case with `.md` suffix (for example, `ai-app-design-guidance.md`).
+- File names follow purpose-based kebab case with `.md` suffix.
 
 ## Testing Guidelines
 
 Testing here means doc quality checks:
 
-- Validate internal consistency (terms, profile names, section names) across all three guides.
+- Validate internal consistency (terms, profile names, section names) across reference and explanation docs.
 - Confirm referenced file paths and commands are valid for this repo context.
 - Run a manual readability pass: each section should be actionable and non-redundant.
+- Ensure new documents are placed in the correct Diataxis folder.
 
 ## Commit & Pull Request Guidelines
 
